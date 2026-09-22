@@ -197,3 +197,4 @@ Ganti `[GITHUB_REPOSITORY]` dengan URL repository GitHub Anda sendiri, contoh:
 ---
 
 Selamat belajar dan semoga project ini membantu memahami alur autentikasi dengan Supabase! 🚀
+v
