@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar - Login App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1>Buat Akun Baru</h1>
+        <p>Lengkapi data di bawah untuk mendaftar</p>
+      </div>
+
+      <div id="alertBox" class="alert"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="fullName">Nama Lengkap</label>
+          <input type="text" id="fullName" placeholder="Masukkan nama lengkap" />
+          <div class="field-error" id="fullNameError">Nama lengkap wajib diisi.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Masukkan username" />
+          <div class="field-error" id="usernameError">Username wajib diisi.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Masukkan email" />
+          <div class="field-error" id="emailError">Email tidak valid.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Minimal 6 karakter" />
+            <button type="button" class="toggle-password" data-target="password">Lihat</button>
+          </div>
+          <div class="field-error" id="passwordError">Password minimal 6 karakter.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Konfirmasi Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" placeholder="Ulangi password" />
+            <button type="button" class="toggle-password" data-target="confirmPassword">Lihat</button>
+          </div>
+          <div class="field-error" id="confirmPasswordError">Konfirmasi password tidak sama.</div>
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn">Daftar</button>
+      </form>
+
+      <p class="footer-text">
+        Sudah punya akun? <a href="index.html" class="link">Masuk</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

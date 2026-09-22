@@ -1,0 +1,9 @@
+{
+  "name": "login-app",
+  "version": "1.0.0",
+  "description": "Aplikasi login sederhana menggunakan HTML, CSS, JavaScript, dan Supabase",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/generate-config.js"
+  }
+}

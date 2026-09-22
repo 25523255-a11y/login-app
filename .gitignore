@@ -1,0 +1,17 @@
+# File konfigurasi Supabase (berisi URL & Anon Key) - JANGAN di-commit
+js/config.js
+
+# Dependency Node.js (tidak dipakai untuk runtime, hanya untuk build script)
+node_modules/
+
+# File environment
+.env
+.env.local
+.env.*.local
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk - Login App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1>Selamat Datang</h1>
+        <p>Silakan masuk ke akun Anda</p>
+      </div>
+
+      <div id="alertBox" class="alert"></div>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="identifier">Username atau Email</label>
+          <input type="text" id="identifier" name="identifier" placeholder="Masukkan username atau email" />
+          <div class="field-error" id="identifierError">Username atau email wajib diisi.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" placeholder="Masukkan password" />
+            <button type="button" class="toggle-password" data-target="password">Lihat</button>
+          </div>
+          <div class="field-error" id="passwordError">Password wajib diisi.</div>
+        </div>
+
+        <div class="form-row">
+          <div class="checkbox-group">
+            <input type="checkbox" id="rememberMe" name="rememberMe" />
+            <label for="rememberMe" style="margin:0;font-weight:400;">Ingat saya</label>
+          </div>
+          <a href="reset-password.html" class="link">Lupa Password?</a>
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn">Masuk</button>
+      </form>
+
+      <p class="footer-text">
+        Belum punya akun? <a href="register.html" class="link">Daftar</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
